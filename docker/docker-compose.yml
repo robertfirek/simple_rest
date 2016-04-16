@@ -2,7 +2,7 @@ version: "2"
 
 services:
   workstation-0-blue:
-    image: registry.training.local/workstation-0:${IMAGE_VERSION}
+    image: "registry.training.local/workstation-0:${IMAGE_VERSION}"
     network_mode: bridge
     environment:
       - "SERVICE_NAME=workstation-0"
@@ -10,7 +10,7 @@ services:
     ports:
       - "4567"
   workstation-0-green:
-    image: registry.training.local/workstation-0:${IMAGE_VERSION}
+    image: "registry.training.local/workstation-0:${IMAGE_VERSION}"
     network_mode: bridge
     environment:
       - "SERVICE_NAME=workstation-0"
